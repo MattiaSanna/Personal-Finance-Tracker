@@ -1,7 +1,6 @@
 Personal Finance Tracker 
 
-Example:
-> A Flask-based web application that processes and visualizes personal data through an interactive dashboard.
+Python based script to catgorize transactions into categrories 
 
 ## Overview
 
