@@ -1,4 +1,4 @@
-##Personal Finance Tracker 
+Personal Finance Tracker 
 
 Python based script to catgorize transactions into categrories 
 
