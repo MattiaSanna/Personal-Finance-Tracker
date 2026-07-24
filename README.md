@@ -4,21 +4,10 @@ Python based script to catgorize transactions into categrories
 
 ## Overview
 
-This project is a Python web application built with Flask. It combines backend data processing with a web-based interface to provide users with an interactive way to visualize and manage information.
-
-Main features:
-- Feature 1
-- Feature 2
-- Feature 3
-- Responsive web interface
-- Automated data processing pipeline
+This project is a Python web application built with Flask. It combines backend data processing with a web-based interface to provide users with visual information.
 
 ## Technologies
 
 - **Python 3.x**
 - **Flask** - Web framework
 - **HTML/CSS/JavaScript** - Frontend interface
-- **SQLite / PostgreSQL** - Database (if applicable)
-- **Pandas / NumPy** - Data processing (if applicable)
-
-## Architecture
