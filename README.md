@@ -53,7 +53,4 @@ money_app/
 └── templates/
     └── index.html     # UI
 ```
- 
-### A word of caution
- 
-This reads real transaction data — names, merchants, amounts. If you ever push this to a public repo, make sure `money.txt` and `data_2.json` are gitignored. Don't commit real financial data.
+
