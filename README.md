@@ -39,8 +39,8 @@ The app expects two files to exist on the server:
  
 | File | Purpose |
 |---|---|
-| `data_2.json` | Maps category names to the keywords/merchant tags used to match transactions |
-| `money.txt` | The raw transaction log synced from Nextcloud (one line per notification) |
+| `categories.json` | Maps category names to the keywords/merchant tags used to match transactions |
+| `transactions.txt` | The raw transaction log synced from Nextcloud (one line per notification) |
  
 Paths to both are currently hardcoded in `money_logic.py` — update them if your setup differs.
  
@@ -49,7 +49,7 @@ Paths to both are currently hardcoded in `money_logic.py` — update them if you
 ```
 money_app/
 ├── app.py             # Flask routes
-├── money_logic.py     # Parsing, categorization, and calculations
+├── tracker.py     # Parsing, categorization, and calculations
 └── templates/
     └── index.html     # UI
 ```
