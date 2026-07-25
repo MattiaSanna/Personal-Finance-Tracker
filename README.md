@@ -15,7 +15,7 @@ Bank notification → MacroDroid → money.txt → Nextcloud sync → Flask app 
 ### Demo Installation
  
 ```bash
-$ git clone <your-repo-url>
+$ git clone https://github.com/MattiaSanna/Personal-Finance-Tracker.git
 $ cd money_app
 $ pip3 install flask
 ```
