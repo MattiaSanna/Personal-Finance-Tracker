@@ -1,6 +1,6 @@
 # Money Tracker
  
-A small self-hosted Flask app that reads my bank notifications and tells me how poor I am.
+A small self-hosted Flask app that categorizes my expenses into categories, month by month.
  
 ### How it works
  
