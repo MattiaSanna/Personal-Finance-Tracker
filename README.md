@@ -1,4 +1,4 @@
-# money-tracker
+# Money Tracker
  
 A small self-hosted Flask app that reads my bank notifications and tells me how poor I am.
  
