@@ -1,0 +1,171 @@
+{
+  "categories": {
+    "Rent": [
+      "AFFITTO",
+      "AFFITTU",
+      "RENT"
+    ],
+    "Bills": [
+      "BOLLETTA",
+      "LUCE",
+      "ACQUA",
+      "BOLLETTE",
+      "BILLS",
+      "BILL"
+    ],
+    "Groceries Turin": [
+      "2538.",
+      "AUMAI",
+      "CARREFOUR",
+      "ESSELUNGA",
+      "2569",
+      "LIDL"
+    ],
+    "Groceries Sard": [
+      "1653.",
+      "2608.",
+      "MD",
+      "SUPERMERCATO",
+      "SUPERMERCATI",
+      "CONAD."
+    ],
+    "GTT": [
+      "G.T.T.",
+      "GTT",
+      "WWW.GTT.TO.IT.",
+      "*GTT"
+    ],
+    "GYM": [
+      "GYM"
+    ],
+    "Subscriptions": [
+      "*VERY",
+      "*GOOGLE",
+      "VERY",
+      "GOOGLE",
+      "SPOTIFY"
+    ],
+    "Flights": [
+      "RYANAIR.",
+      "RYANAIR",
+      "AEROITALI."
+    ],
+    "Booking": [
+      "BOOKING.COM",
+      "*BOOKING",
+      "WWW.BOOKING.COM",
+      "*AIRBNB"
+    ],
+    "Gas": [
+      "ENI",
+      "CARBURANTI",
+      "PV6505.",
+      "COLONNA",
+      "BENZINA",
+      "GAS",
+      "IMPIANTO",
+      "DISTRIBUTORE",
+      "DISTRIB"
+    ],
+    "Transports": [
+      "CTM",
+      "*TRENITALIAS.",
+      "*DOTT",
+      "ARRIVA",
+      "SO"
+    ],
+    "Gifts": [
+      "STROILIOROS.",
+      "STROILI",
+      "*STROILIOROS.",
+      "*STROILI",
+      "*DELONGHIAPP",
+      "GIFT",
+      "GIFTS"
+    ],
+    "Dining out": [
+      "KALORY",
+      "TANDOORI",
+      "POKE",
+      "ROSSOPOMODORO.",
+      "PADEL",
+      "CAFFETTERIA",
+      "SPLENDOR",
+      "MAVERIK.",
+      "BAR",
+      "NEGOZI",
+      "HOKKAIDO",
+      "LA",
+      "CAZAC",
+      "SU",
+      "ENDO",
+      "THAI",
+      "INVESTFOOD",
+      "Sum*UNO",
+      "NIZZA",
+      "ONE",
+      "Signor",
+      "MOLLICA.",
+      "DEMIR.",
+      "PIZZA",
+      "GELATERIA",
+      "SUSHI",
+      "CAGLIAR.",
+      "*Lai",
+      "DA",
+      "KEBAB",
+      "FICO",
+      "*ALI",
+      "I.S.A.",
+      "START",
+      "SKYE",
+      "CIANCI"
+    ],
+    "Online shopping": [
+      "AMAZON.",
+      "WWW.AMAZON.IT.",
+      "AMZN",
+      "Amazon",
+      "00321",
+      "*UNIEURO",
+      "CANELLI",
+      "*CASEKING",
+      "LDLC",
+      "PcComponentes",
+      "AMAZON",
+      "ZALANDO",
+      "*YELODIESRL."
+    ],
+    "Coffee app": [
+      "COFFEE"
+    ],
+    "Clothes": [
+      "LEVI'S.",
+      "COTTON",
+      "CLAYTON.",
+      "*ZALANDOSE.",
+      "CLOTHES",
+      "HM",
+      "OVS."
+    ],
+    "Pharmacy": [
+      "FARMACIA",
+      "PHARMACY",
+      "APOTECA",
+      "FARMAGOR{"
+    ],
+    "Therapy": [
+      "ROSANNA"
+    ],
+    "Salary": [
+      "STIPENDIO",
+      "SALARY",
+      "STIPENDIU"
+    ],
+    "Miscellaneous": [],
+    "Vacanza": [
+      "VACANZA",
+      "HOLIDAY"
+    ]
+  }
+}
