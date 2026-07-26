@@ -2,21 +2,25 @@
  
 A small self-hosted Flask app that categorizes my expenses month by month.
  
-### How it works
- 
-1. **MacroDroid** on my phone reads incoming bank notifications and appends the transaction details to a text file.
-2. That file gets synced to my server through **Nextcloud**.
-3. The **Flask app** on the server reads the file, categorizes each transaction, and calculates spending, savings, and category breakdowns.
-4. Results are shown on a simple web page — no manual data entry required.
-```
-Bank notification → MacroDroid → money.txt → Nextcloud sync → Flask app → totals
-```
+## How it works
 
-### Notes to consider
- 
-1. Why a simple .txt file instead of a proper database?
-2. It started as Python practice and later became more seriues. Also, it makes the Bank notification → MacroDroid transition easier.
-3. The transactions into the Demo are completelty made up.
+- Parses a transaction history file and automatically categorizes expenses using keyword matching.
+- Calculates monthly spending, income, savings, and vehicle-related expenses.
+- Applies custom rules for recurring and shared expenses (e.g., Spotify family plan, Ryanair and Aeroitalia flight splitting).
+- Generates monthly spending reports by category, with an optional transaction-level breakdown.
+- Analyzes spending using budgeting metrics, including the 50/30/20 rule.
+- Flags uncategorized transactions and allows new keywords to be easily added to the category database.
+
+## Notes
+
+1. **Why use a plain `.txt` file instead of a database?**  
+   The project started as a small Python learning exercise. A text file was simple to work with and integrates well with my Bank Notification → MacroDroid → Python workflow.
+
+2. **Why not migrate to a database?**  
+   I may do so in the future, but the current approach is lightweight, easy to maintain, and fully meets my personal needs.
+
+3. **Demo data**  
+   All transactions included in the demo are fictional and were created solely for demonstration purposes.
 
 
 ### How the Pythone file works:
