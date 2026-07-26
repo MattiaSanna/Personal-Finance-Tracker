@@ -13,13 +13,16 @@ A small self-hosted Flask app that categorizes my expenses month by month.
 
 ## Notes
 
-1. **Why use a plain `.txt` file instead of a database?**  
+1. **The following script is just a demo**  
+   The script I currently use on my server includes significant differences; this demo is only intended to showcase the functionality.
+
+2. **Why use a plain `.txt` file instead of a database?**  
    The project started as a small Python learning exercise. A text file was simple to work with and integrates well with my Bank Notification → MacroDroid → Python workflow.
 
-2. **Why not migrate to a database?**  
+3. **Why not migrate to a database?**  
    I may do so in the future, but the current approach is lightweight, easy to maintain, and fully meets my personal needs.
 
-3. **Demo data**  
+4. **Demo data**  
    All transactions included in the demo are fictional and were created solely for demonstration purposes.
 
 
