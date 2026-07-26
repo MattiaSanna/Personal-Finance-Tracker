@@ -2,7 +2,7 @@
  
 A small self-hosted Flask app that categorizes my expenses month by month.
  
-## How it works
+## What it does
 
 - Parses a transaction history file and automatically categorizes expenses using keyword matching.
 - Calculates monthly spending, income, savings, and vehicle-related expenses.
