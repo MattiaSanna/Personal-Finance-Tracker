@@ -27,9 +27,9 @@ A small self-hosted Flask app that categorizes my expenses month by month.
 ### Demo Installation
  
 ```bash
-$ git clone https://github.com/MattiaSanna/Personal-Finance-Tracker.git
-$ cd Personal-Finance-Tracker
-$ pip3 install flask
+git clone https://github.com/MattiaSanna/Personal-Finance-Tracker.git
+cd Personal-Finance-Tracker
+pip3 install flask
 ```
  
 (Use `pip3 install flask --break-system-packages` or a virtualenv if your system blocks global installs.)
@@ -37,7 +37,7 @@ $ pip3 install flask
 ### Usage
  
 ```bash
-$ python3 app.py
+python3 app.py
 ```
  
 Then open `http://localhost:8001` in a browser. Hit **Run** to process the latest data, or use **Choose** to pick a breakdown style:
