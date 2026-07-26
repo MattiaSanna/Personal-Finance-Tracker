@@ -28,7 +28,7 @@ $ pip3 install flask
 $ python3 app.py
 ```
  
-Then open `http://<server-ip>:8001` in a browser. Hit **Run** to process the latest data, or use **Choose** to pick a breakdown style:
+Then open `http://localhost:8001` in a browser. Hit **Run** to process the latest data, or use **Choose** to pick a breakdown style:
  
 - **Normal** — total spent per category
 - **Show more** — per-category totals plus a full line-item breakdown
