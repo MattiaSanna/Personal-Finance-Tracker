@@ -23,12 +23,6 @@ A small self-hosted Flask app that categorizes my expenses month by month.
    All transactions included in the demo are fictional and were created solely for demonstration purposes.
 
 
-### How the Pythone file works:
- 
-1. Why a simple .txt file instead of a proper database?
-2. It started as Python practice and later became more seriues. Also, it makes the Bank notification → MacroDroid transition easier.
-3. The transactions into the Demo are completelty made up.
-
  
 ### Demo Installation
  
