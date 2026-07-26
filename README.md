@@ -1,6 +1,6 @@
 # Personal-Finance-Tracker
  
-A small self-hosted Flask app that categorizes my expenses into categories, month by month.
+A small self-hosted Flask app that categorizes my expenses month by month.
  
 ### How it works
  
