@@ -1,9 +1,7 @@
 import json
 
-# --- YOUR MONEY SCRIPT LOGIC (MERGED HERE) ---
-# This version uses print() inside the logic (like your original script).
+
 def run_tracker(choice):
-    # Example prints — replace/add whatever print() calls your real script uses
         
     choice_2="show_off_more"
     #choice="50 30 20"
@@ -20,10 +18,7 @@ def run_tracker(choice):
 
     categories = data.get("categories", {})
 
-    car_list = list(categories.get("Gas", []))
-    car_list += ["*PRIMA", "*PAG", "OLLU", "*AGCOMPANYSR", "*MOONEY.","BOLLO"]
     salary_list = categories.get("Salary", [])
-    car = 0
     salary_tot = 0
 
     months_list = [
@@ -57,24 +52,10 @@ def run_tracker(choice):
                     num=0                     #cause the gas station charges 103.29 at first
             except (ValueError, IndexError):
                 pass
-            
-            if 'SPOTIFY' in line:         #family subscrption, 6 people
-                num/=6
-                line=line[0:-17]+'SPOTIFY'
-            if 'RYANAIR' in line:
-                if l[-1]!='NOSPLIT':
-                    num/=2                     #split with my gf
-            if 'AEROITALI' in line:
-                if l[-1]!='NOSPLIT':
-                    num/=2                     
-            
-            if any(w in car_list for w in l[-15:]):
-                car+=num
                 
             if any(w in salary_list for w in l[-15:]):
                 salary_tot+=num
                 
-            
             
             try:
                 month=int(line[3:5])
@@ -95,19 +76,14 @@ def run_tracker(choice):
             except (ValueError, IndexError):
                 pass
             
-            #this is to store the data of each if you want to better inspect each esxpense
-            lenght=len(l)
+            # store data of each expense for easier inspection later
+            lenght = len(l)
+            base = 13 if 'PAYPAL' in line else 12
             
-            if lenght>13 and 'PAYPAL' not in line:
-                name=l[12]+' '+l[13] 
-            elif lenght>14 and 'PAYPAL' in line:
-                name=l[13]+' '+l[14] 
-            elif lenght>15 and 'PAYPAL' in line:
-                name=l[14]+' '+l[15] 
-            elif lenght>12 and 'PAYPAL' in line:
-                name=l[13]
-            elif lenght>12:
-                name=l[12] 
+            if lenght > base + 1:
+                name = l[base] + ' ' + l[base + 1]
+            elif lenght > base:
+                name = l[base]
                 
             if len(name)>first_header:
                 name=name[0:first_header]
@@ -269,8 +245,5 @@ def run_tracker(choice):
         f"{'-'*25}\n"
         f"Total    {saving_tot / salary_tot * 100:>4.1f}%|{saving_tot:>9.2f}€\n"
         f"Per month     |{saving_tot / x:>9.2f}€\n"
-        f"{'-'*25}\n"
-        f"\nMoney spent on the car\n"
-        f"{'-'*25}\n"
-        f"Total    {car / salary_tot * 100:>4.1f}%|{car:>9.2f}€"
+
     )
