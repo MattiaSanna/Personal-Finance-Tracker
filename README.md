@@ -17,7 +17,7 @@ A small self-hosted Flask app that categorizes my expenses month by month.
    This demo is only intended to showcase the functionality; the script I currently use on my server includes a few differences on the strcuture, but the main tracker.py is the same.
 
 2. **Why use a plain `.txt` file instead of a database?**  
-   The project started as a small Python learning exercise. A text file was simple to work with and integrates well with my Bank Notification → MacroDroid → Python workflow.
+   The project started as a small Python exercise. A text file was simple to work with and integrates well with my Bank Notification → MacroDroid → Python workflow.
 
 3. **Why not migrate to a database?**  
    I may do so in the future, but the current approach is lightweight, easy to maintain, and fully meets my personal needs.
