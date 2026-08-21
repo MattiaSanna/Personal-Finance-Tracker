@@ -40,13 +40,13 @@ def run_tracker(choice):
         num=0
         l = line.split()
         
-        if l[3] == "Mattia" and len(l) >5 and l[5] != "Negato":   #so we only select the lines with my name, this comes from whatsapp export
+        if l[3] == "Mattia" and len(l) >5 and l[5] != "Negato":   #so we only select the lines with my name, this is due my previous exoprt method coming from whatsapp
                 
             
             try:
                 num = float(l[9].replace(",", "."))
                 if num == 103.29:
-                    num=0                     #cause the gas station charges 103.29 at first
+                    num=0                                         #because the gas station charges 103.29 at first
             except (ValueError, IndexError):
                 pass
                 
@@ -59,7 +59,7 @@ def run_tracker(choice):
                 month_name=months_list[month-1]
             except (ValueError, IndexError):
                 pass
-            #it's necvessary to keep them divide cause of the txt file. at first it didn't have that much info
+            #it's necessary to keep them divide cause of the txt file. at first it didn't have that much info
             try:
                 day=int(line[0:2])
                 if line[14]==':':
@@ -89,7 +89,7 @@ def run_tracker(choice):
                 
                 if any(keyword in line.split() for keyword in keywords):
                              
-                    #if it mathces then add the value into the dict
+                    #if it matches then add the value into the dict
                     dict_lists[category].setdefault(month_name, []).append(num) 
                     
                     #also, it's not miscellanous
@@ -116,6 +116,8 @@ def run_tracker(choice):
 
 
     #here's the printing
+
+        
     last_up = f"\nLast update:\n{months_list[month-1]} {day} at {int(hour):02d}:{int(minute):02d}"
     print (last_up,"\n\n")
 
@@ -217,7 +219,7 @@ def run_tracker(choice):
         ess_perc=int(abs(living_cat/salary*100))
         wants_perc=int(100-ess_perc-sav_perc)
        
-        if choice=='50 30 20':
+        if choice=='Stats':
             
             print(f"{'Essential':<{first_header-4}}{ess_perc:>3.0f}%|{living_cat:>{total_header}.2f}€")
             print(f"{'Wants':<{first_header-4}}{wants_perc:>3.0f}%|{wants:>{total_header}.2f}€")
@@ -236,7 +238,7 @@ def run_tracker(choice):
             print(f"{'Total':<{first_header}}|{total_month:>{total_header}.2f}€")
             print(f"{'Savings' :<{first_header}}|{savings:>{total_header}.2f}€")
 
-    if choice=="50 30 20":
+    if choice=="Stats":
         print(
         f"\n\nMoney saved in total\n"
         f"{'-'*25}\n"
