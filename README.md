@@ -63,7 +63,7 @@ The app expects two files to exist on the server:
 ```
 money_app/
 ├── app.py             # Flask routes
-├── tracker.py     # Parsing, categorization, and calculations
+├── tracker.py         # Parsing, categorization, and calculations
 └── templates/
     └── index.html     # UI
 ```
