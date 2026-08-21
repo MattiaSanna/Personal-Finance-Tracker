@@ -3,10 +3,7 @@ import json
 
 def run_tracker(choice):
         
-    choice_2="show_off_more"
-    #choice="50 30 20"
-    fifty_thirty='false'
-
+    choice_2="show_more"
 
     total_header=8
     first_header=15
@@ -163,7 +160,7 @@ def run_tracker(choice):
             
             print("-" * (total_header+first_header+2))
             
-            if choice_2=='show_off_less':
+            if choice_2=='show_less':
                 
                 show_list=['Online shopping','Dining out','Groceries Turin','Flights','Miscellaneous']
                 dict_categ = {k: v for k, v in dict_categ.items() if k in show_list}
