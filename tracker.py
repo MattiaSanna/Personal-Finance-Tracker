@@ -3,7 +3,7 @@ import json
 
 def run_tracker(choice):
         
-    path="data/money.txt"
+    path="data/transactions.txt"
 
     total_header=8
     first_header=15
