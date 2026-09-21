@@ -165,10 +165,8 @@ def run_tracker(choice):
                     
             current_year, current_month, current_date = get_date(line, current_year, current_month, current_date)
             
-            
-            
-            
-            
+            if current_date is None or len(l) <= 5:
+                continue
             if l[3] == "Mattia" and len(l) >5 and l[5] != "Negato" and current_date+11>=last_date:   #so we only select the lines with my name, this comes from whatsapp export          
             
                 month_name = months_list[int(current_month) - 1]
