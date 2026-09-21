@@ -1,4 +1,32 @@
 {
+  "months_list": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "months_days": [
+    21,
+    20,
+    22,
+    21,
+    21,
+    21,
+    23,
+    21,
+    22,
+    22,
+    21,
+    21
+  ],
   "categories": {
     "Rent": [
       "AFFITTO",
