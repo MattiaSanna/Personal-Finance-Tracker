@@ -229,7 +229,6 @@ CAPP BY N AND I.
 28/01/xxxx, xx:xx - Mattia Sanna: Con le nostre soluzioni puoi prenderti cura di chi ti sta a cuore. Scoprile ora.
 27/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 5.99 EUR presso PAYPAL *VERY MOBILE.
 26/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 33.89 EUR presso AMAZON.
-26/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 123.0 EUR presso ROSANNA CUCCIA.
 25/01/xxxx, xx:xx - Mattia Sanna: Eseguito Pagamento Pos di 15.99 EUR presso DOUGLAS ITALIA SPA 608.
 24/01/xxxx, xx:xx - Mattia Sanna: Eseguito Pagamento Pos di 27.66 EUR presso ROSSOPOMODORO.
 23/01/xxxx, xx:xx - Mattia Sanna: Eseguito Pagamento Pos di 20.93 EUR presso LIDL 2538.
@@ -255,14 +254,8 @@ CAPP BY N AND I.
 06/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 30.59 EUR presso AMAZON.
 04/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 20.99 EUR presso PAYPAL *SPOTIFY*P3F091.
 01/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
-01/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 0 EUR presso STIPENDIO
 01/01/xxxx, xx:xx - Mattia Sanna: Eseguito Acquisto online di 2119.64 EUR presso STIPENDIO
-01/10/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
-01/09/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
-01/08/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
-01/07/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
 01/06/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
 01/04/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
 01/03/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
 01/02/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
-01/01/2026, 14:29 - Mattia Sanna: Eseguito Acquisto online di 27.1 EUR presso GYM
