@@ -274,7 +274,7 @@ def run_tracker(choice):
 
         for cat in dict_living:
 
-            living_cat += round(dict_totals[cat], 2)
+            living_cat += round(dict_totals.get(cat, 0), 2)
         car+=round(dict_totals["Gas"], 2)+round(dict_totals["Car"], 2)
 
         ess_perc=int(abs(living_cat/salary_tot*100))
