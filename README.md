@@ -48,7 +48,7 @@ Then open `http://127.0.0.1:8001` in a browser. Hit **Run** to process the lates
  
 - **Normal** — total spent per category
 - **Show more** — per-category totals plus a full line-item breakdown
-- **50 30 20** — spending split into Essentials / Wants / Savings percentages
+- **Stats** — spending split into Essentials / Wants / Savings percentages
 ### Configuration
  
 The app expects two files to exist on the server:
