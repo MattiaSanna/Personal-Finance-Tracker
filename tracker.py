@@ -292,7 +292,7 @@ def run_tracker(choice):
         print("-" * (total_header+first_header+2))
         print (
         f"{'Essential':<{first_header-4}}{ess_perc:>3.0f}%|{living_cat/n_months:>{total_header}.2f}€\n"
-        f"{'Wants':<{first_header-4}}{saving_tot / salary_tot * 100:>3.0f}%|{salary_tot / len(dict_categ['Salary']) - saving_tot / n_months - living_cat/n_months:>8.2f}€\n"
+        f"{'Wants':<{first_header-4}}{100-ess_perc-saving_tot / salary_tot * 100:>3.0f}%|{salary_tot / len(dict_categ['Salary']) - saving_tot / n_months - living_cat/n_months:>8.2f}€\n"
         f"{'Saves':<{first_header-4}}{saving_tot / salary_tot * 100:>3.0f}%|{saving_tot / n_months:>8.2f}€\n"
 
     )
