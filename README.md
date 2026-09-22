@@ -30,6 +30,7 @@ A small self-hosted Flask app that categorizes my expenses month by month.
 ### Demo Installation
  
 ```bash
+cd ~
 git clone https://github.com/MattiaSanna/Personal-Finance-Tracker.git
 cd Personal-Finance-Tracker
 pip3 install flask
