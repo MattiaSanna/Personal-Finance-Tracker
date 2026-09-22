@@ -1,4 +1,5 @@
 11/06/2026, 13:44 - Mattia Sanna: Eseguito Acquisto online di 20 EUR presso BILLCAPP BY N AND I.
+11/06/2026, 13:44 - Mattia Sanna: Eseguito Acquisto online di 2120 EUR presso SALARY
 10/06/2026, 13:44 - Mattia Sanna: Eseguito Acquisto online di 4.0 EUR presso COFFEE CAPP BY N AND I.
 09/06/2026, 19:01 - Mattia Sanna: Eseguito Pagamento Pos di 26.0 EUR presso AUMAI SHOPPING.
 08/06/2026, 23:27 - Mattia Sanna: Eseguito Acquisto online di 24.56 EUR presso AMAZON.
@@ -134,7 +135,7 @@
 01/03/2026, 10:37 - Mattia Sanna: Eseguito Pagamento Pos di 350 EUR presso AFFITTO
 01/03/2026, 10:37 - Mattia Sanna: 
 01/03/2026, 10:37 - Mattia Sanna: Eseguito Pagamento Pos di 6.66 EUR presso MD DISCOUNT.
-01/03/2026, 9:49 - Mattia Sanna:
+11/03/2026, 13:44 - Mattia Sanna: Eseguito Acquisto online di 2020 EUR presso SALARY
 01/03/2026, 9:39 - Mattia Sanna: Eseguito Acquisto online di 1.3 EUR presso PAYPAL *TRENITALIAS.
 01/03/2026, 9:37 - Mattia Sanna: Eseguito Acquisto online di 3.7 EUR presso PAYPAL *TRENITALIAS.
 01/03/2026, 0:08 - Mattia Sanna: Eseguito Acquisto online di 1.99 EUR presso PAYPAL *GOOGLE GOOGLE.
@@ -147,6 +148,7 @@
 26/02/2026, 12:05 - Mattia Sanna: Proteggi la salute tua e di chi ti sta a cuore: scopri la promo in corso.
 24/02/2026, 10:13 - Mattia Sanna: Eseguito Acquisto online di 5.0 EUR presso COFFEE
 22/02/2026, 23:18 - Mattia Sanna: Eseguito Pagamento Pos di 2.91 EUR presso BAR
+11/02/2026, 13:44 - Mattia Sanna: Eseguito Acquisto online di 1976 EUR presso SALARY
 22/02/2026, 23:18 - Mattia Sanna: Eseguito Pagamento Pos di 5.59 EUR presso LIDL 2538.
 21/02/2026, 23:07 - Mattia Sanna: Eseguito Pagamento Pos di 17.6 EUR presso LA RINASCITA DI CAZAC CENAADD
 21/02/2026, 17:18 - Mattia Sanna: Eseguito Pagamento Pos di 20.96 EUR presso LIDL 2538.
