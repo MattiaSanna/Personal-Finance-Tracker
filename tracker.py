@@ -16,8 +16,8 @@ def run_tracker(choice):
         data = json.load(f)
 
     categories = data.get("categories", {})
-    months_list = data.get("months_list", {})
-    months_days = data.get("months_days", {})
+    months_list = data.get("months_list", [])
+    months_days = data.get("months_days", [])
 
     # prepare the master dictionary structure
     dict_lists = {category: {} for category in categories}
