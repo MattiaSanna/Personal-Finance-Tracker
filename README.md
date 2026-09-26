@@ -27,19 +27,70 @@ A small self-hosted Flask app that categorizes my expenses month by month.
 
 
  
-### Demo Installation
- 
+### Demo ## Installation
+
+### Windows (PowerShell)
+
+Install Git and Python (skip if already installed):
+
+```powershell
+winget install --id Git.Git
+winget install --id Python.Python.3.13
+```
+
+Close and reopen PowerShell, then verify:
+
+```powershell
+git --version
+python --version
+```
+
+Clone and set up the project:
+
+```powershell
+cd ~
+git clone https://github.com/MattiaSanna/Personal-Finance-Tracker.git
+cd Personal-Finance-Tracker
+python -m pip install flask
+```
+
+Run the app:
+
+```powershell
+python app.py
+```
+
+---
+
+### Linux (Debian/Ubuntu)
+
+Install Git and Python/pip (skip if already installed):
+
+```bash
+sudo apt update
+sudo apt install -y git python3 python3-pip
+```
+
+Clone and set up the project:
+
 ```bash
 cd ~
 git clone https://github.com/MattiaSanna/Personal-Finance-Tracker.git
 cd Personal-Finance-Tracker
 pip3 install flask
 ```
- 
-(Use `pip3 install flask --break-system-packages` or a virtualenv if your system blocks global installs.)
- 
-### Usage
- 
+
+> If your system blocks global pip installs, use:
+> `pip3 install flask --break-system-packages`
+> or set up a virtual environment:
+> ```bash
+> python3 -m venv venv
+> source venv/bin/activate
+> pip install flask
+> ```
+
+Run the app:
+
 ```bash
 python3 app.py
 ```
