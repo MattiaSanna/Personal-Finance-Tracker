@@ -38,13 +38,6 @@ winget install --id Git.Git
 winget install --id Python.Python.3.13
 ```
 
-Close and reopen PowerShell, then verify:
-
-```powershell
-git --version
-python --version
-```
-
 Clone and set up the project:
 
 ```powershell
