@@ -27,7 +27,7 @@ A small self-hosted Flask app that categorizes my expenses month by month.
 
 
  
-### Demo ## Installation
+### Demo Installation
 
 ### Windows (PowerShell)
 
