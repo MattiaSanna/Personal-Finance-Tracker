@@ -3,8 +3,9 @@ import json
 
 def run_tracker(choice):
         
-    path="data/transactions.txt"
-
+    #choice="Show more"
+    #choice="Stats"
+    path="/home/mattia/money/data/Nextcloud/data/mattiasanna1999@gmail.com/files/PC/money.txt"
     total_header=8
     first_header=15
 
@@ -27,12 +28,12 @@ def run_tracker(choice):
 
 
     def add_name(categories, data):
-        if l[-1]=='ADD':
-
+        if l[-1] == 'ADD':
             for category in categories:
                 if category in line:
-                    data["categories"].setdefault(category, []).append(l[12])
-                    
+                    existing = data["categories"].setdefault(category, [])
+                    if l[12] not in existing:
+                        existing.append(l[12])
 
             with open("data/categories.json", "w") as f:
                 json.dump(data, f, indent=2)
@@ -165,8 +166,10 @@ def run_tracker(choice):
                     
             current_year, current_month, current_date = get_date(line, current_year, current_month, current_date)
             
-            if current_date is None or len(l) <= 5:
-                continue
+            
+            
+            
+            
             if l[3] == "Mattia" and len(l) >5 and l[5] != "Negato" and current_date+11>=last_date:   #so we only select the lines with my name, this comes from whatsapp export          
             
                 month_name = months_list[int(current_month) - 1]
@@ -188,7 +191,7 @@ def run_tracker(choice):
         if month in dict_lists[category]:
             if category == 'Salary':
                 salary_tot = round(sum(sum(vals) for vals in dict_lists['Salary'].values()), 2)
-                return salary, total_cat, saved_month, salary_tot
+                return total_cat, saved_month, salary_tot
                 
         
             total_cat += round(sum(dict_lists[category][month]),2)
@@ -209,7 +212,7 @@ def run_tracker(choice):
                 print(f"{category:<{first_header}}|{total_cat:>{total_header}.2f}€")  
             if category=='Saves':   
                 saved_month += round(sum(dict_lists[category][month]),2)
-        return salary, total_cat, saved_month, salary_tot
+        return total_cat, saved_month, salary_tot
 
                  
                                 
@@ -274,9 +277,8 @@ def run_tracker(choice):
 
         for cat in dict_living:
 
-            living_cat += round(dict_totals.get(cat, 0), 2)
-        car += round(dict_totals.get("Gas", 0), 2)
-        car += round(dict_totals.get("Car", 0), 2)
+            living_cat += round(dict_totals[cat], 2)
+        car+=round(dict_totals["Gas"], 2)+round(dict_totals["Car"], 2)
 
         ess_perc=int(abs(living_cat/salary_tot*100))
 
@@ -326,7 +328,7 @@ def run_tracker(choice):
         
 
         living_list=['Rent','Bills','Groceries Turin','Groceries Sardinia','GTT','GYM','Subscriptions','Chinese market', 'Pharmacy']
-        come_back=['Flights','Transports','Gas','Booking']
+        come_back=['Flights Sardini','Transports','Gas','Booking Sardini']
         dict_living = {k: v for k, v in dict_lists.items() if k in living_list}
         dict_come = {k: v for k, v in dict_lists.items() if k in come_back}
 
@@ -349,7 +351,6 @@ def run_tracker(choice):
 
         if skip=='false':
             saving_tot+=savings
-            print ()
 
         wants=abs(salary)-abs(living_cat)-abs(savings)
         fluff=abs(salary)-abs(living_cat)-abs(savings)-abs(come_cat)
@@ -423,39 +424,46 @@ def run_tracker(choice):
         
         saved_month=0
         total_month=0
-        
         salary, living_cat, come_cat, dict_living, dict_come = living_come_cat(dict_lists)
         
-
         print ('\n\n')
-
         print("Money spent in:", month,'\n')
 
         if month in dict_lists.get('Salary', {}):
             salary = round(-sum(dict_lists['Salary'][month]), 2)
-
+            
         # category lines are the same for every choice, so they stay in one place
-        for category in dict_lists:
-            total_cat = 0
-
-            salary, total_cat, saved_month, salary_tot = print_normal(salary, total_cat, saved_month, salary_tot)
-            total_month+=total_cat
-
         dict_totals = dict(sorted(dict_totals.items(), key=lambda item: item[1], reverse=True))
 
-        # everything below needs salary and total_month, so it comes after the category loop
-        savings, salary, wants, fluff, sav_perc, ess_perc, wants_perc, saving_tot = percentages(salary, saving_tot, months_days, total_month, living_cat, come_cat)
-
         if choice=="Show more":
+            
+            for category in dict_lists:
+                total_cat = 0
 
+                total_cat, saved_month, salary_tot = print_normal(salary, total_cat, saved_month, salary_tot)
+                total_month+=total_cat
+                
+            savings, salary, wants, fluff, sav_perc, ess_perc, wants_perc, saving_tot = percentages(salary, saving_tot, months_days, total_month, living_cat, come_cat)
             print_show_more(come_cat, living_cat, fluff, total_month, savings, saved_month)
 
         elif choice=="Stats":
+            
+            for category in dict_lists:
+                total_cat = 0
 
+                total_cat, saved_month, salary_tot = print_normal(salary, total_cat, saved_month, salary_tot)
+                total_month+=total_cat
+            savings, salary, wants, fluff, sav_perc, ess_perc, wants_perc, saving_tot = percentages(salary, saving_tot, months_days, total_month, living_cat, come_cat)
             print_stats(ess_perc, wants_perc, sav_perc, living_cat, wants, savings, total_month)
 
         else:
             
+            for category in dict_lists:
+                total_cat = 0
+
+                total_cat, saved_month, salary_tot = print_normal(salary, total_cat, saved_month, salary_tot)
+                total_month+=total_cat
+                savings, salary, wants, fluff, sav_perc, ess_perc, wants_perc, saving_tot = percentages(salary, saving_tot, months_days, total_month, living_cat, come_cat)
             print_normal2(total_month, savings)
 
     # the averages are printed once, after all the months, so this stays outside the loop
